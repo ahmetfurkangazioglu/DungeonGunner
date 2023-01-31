@@ -1,4 +1,3 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -27,4 +26,6 @@ public class Room
         childRoomIDList = new List<string>();
         doorWayList = new List<Doorway>();
     }
+
+   
 }

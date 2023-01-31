@@ -208,7 +208,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce286e74e2a83bf46980ea6a29d5ce76, type: 2}
   - {fileID: 11400000, guid: f5d9d479539ee4d448f5291a5e12f67b, type: 2}
   - {fileID: 11400000, guid: 30316cc808106434ca967d8abaa52978, type: 2}
-  currentDungeonLevelListIndex: 0
+  currentDungeonLevelListIndex: 1
   gameState: 0
 --- !u!4 &287425700
 Transform:
@@ -503,8 +503,8 @@ Camera:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 0
-    height: 0
+    width: 1
+    height: 1
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
