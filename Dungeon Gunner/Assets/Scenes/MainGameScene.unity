@@ -182,6 +182,7 @@ GameObject:
   m_Component:
   - component: {fileID: 287425700}
   - component: {fileID: 287425699}
+  - component: {fileID: 287425701}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -208,7 +209,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: ce286e74e2a83bf46980ea6a29d5ce76, type: 2}
   - {fileID: 11400000, guid: f5d9d479539ee4d448f5291a5e12f67b, type: 2}
   - {fileID: 11400000, guid: 30316cc808106434ca967d8abaa52978, type: 2}
-  currentDungeonLevelListIndex: 1
+  currentDungeonLevelListIndex: 5
   gameState: 0
 --- !u!4 &287425700
 Transform:
@@ -225,6 +226,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &287425701
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 287425698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 23ff8ac91e0615a45a925f52ad87fd94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &473755472
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,7 +526,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 1037751
+    m_Bits: 1045943
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0

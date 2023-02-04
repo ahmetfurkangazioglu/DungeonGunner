@@ -21,10 +21,7 @@ public class DungeonBuilder : SingletonMonobehaviour<DungeonBuilder>
         GameResources.Instance.dimmedMaterial.SetFloat("Alpha_Slider", 1f);
     }
 
-    public void Deneme()
-    {
-        Debug.Log("1");
-    }
+ 
     /// <summary>
     /// Load the room node type list
     /// </summary>
