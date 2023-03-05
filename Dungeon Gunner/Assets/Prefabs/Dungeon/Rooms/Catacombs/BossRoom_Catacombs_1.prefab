@@ -32735,14 +32735,6 @@ CompositeCollider2D:
         Y: 290000000
       - X: 350000000
         Y: 290000000
-    - - X: -20000000
-        Y: 395000000
-      - X: -80000000
-        Y: 395000000
-      - X: -80000000
-        Y: 330000000
-      - X: -20000000
-        Y: 330000000
     - - X: 190000000
         Y: 395000000
       - X: 130000000
@@ -32750,6 +32742,14 @@ CompositeCollider2D:
       - X: 130000000
         Y: 330000000
       - X: 190000000
+        Y: 330000000
+    - - X: -20000000
+        Y: 395000000
+      - X: -80000000
+        Y: 395000000
+      - X: -80000000
+        Y: 330000000
+      - X: -20000000
         Y: 330000000
     - - X: 350000000
         Y: 255000000
@@ -32783,14 +32783,6 @@ CompositeCollider2D:
         Y: -20000000
       - X: 40000000
         Y: -20000000
-    - - X: -20000000
-        Y: 245000000
-      - X: -80000000
-        Y: 245000000
-      - X: -80000000
-        Y: 180000000
-      - X: -20000000
-        Y: 180000000
     - - X: 190000000
         Y: 245000000
       - X: 130000000
@@ -32798,6 +32790,14 @@ CompositeCollider2D:
       - X: 130000000
         Y: 180000000
       - X: 190000000
+        Y: 180000000
+    - - X: -20000000
+        Y: 245000000
+      - X: -80000000
+        Y: 245000000
+      - X: -80000000
+        Y: 180000000
+      - X: -20000000
         Y: 180000000
   m_CompositePaths:
     m_Paths:
@@ -32924,6 +32924,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10b1b2bb119b23a4bab5f1d45d6e357b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  grid: {fileID: 0}
+  groundTilemap: {fileID: 0}
+  decoration1Tilemap: {fileID: 0}
+  decoration2Tilemap: {fileID: 0}
+  frontTilemap: {fileID: 0}
+  collisionTilemap: {fileID: 0}
+  minimapTilemap: {fileID: 0}
+  roomColliderBounds:
+    m_Center: {x: 0, y: 0, z: 0}
+    m_Extent: {x: 0, y: 0, z: 0}
 --- !u!1 &4561116449979205807
 GameObject:
   m_ObjectHideFlags: 0

@@ -26,6 +26,16 @@ public class GameResources : MonoBehaviour
     [Tooltip("Populate with the dungeon RoomNodeTypeListSO")]
     #endregion
     public RoomNodeTypeListSO roomNodeTypeList;
+
+    #region Header PlAYER
+    [Space(10)]
+    [Header("PLAYER")]
+    #endregion
+    #region Tooltip
+    [Tooltip("The current player scriptable object - this is used to reference the current player between scenes")]
+    #endregion
+    public CurrentPlayerSO currentPlayer;
+
     #region Header Materials
     [Space(10)]
     [Header("MATERIALS")]
