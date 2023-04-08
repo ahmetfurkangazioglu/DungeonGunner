@@ -437,6 +437,9 @@ GameObject:
   - component: {fileID: 3079284023515846359}
   - component: {fileID: -2834780860174867264}
   - component: {fileID: 1889959843359752723}
+  - component: {fileID: 7724647921085784054}
+  - component: {fileID: -1094789795490392642}
+  - component: {fileID: -1323745548017512079}
   m_Layer: 10
   m_Name: Player
   m_TagString: Player
@@ -658,8 +661,10 @@ MonoBehaviour:
   MovementToPositionEvent: {fileID: 0}
   idleEvent: {fileID: 0}
   aimWeaponEvent: {fileID: 0}
+  fireWeaponEvent: {fileID: 0}
   setActiveWeaponEvent: {fileID: 0}
   activeWeapon: {fileID: 0}
+  weaponFiredEvent: {fileID: 0}
   spriteRenderer: {fileID: 0}
   animator: {fileID: 0}
 --- !u!114 &1865976970391735808
@@ -812,3 +817,39 @@ MonoBehaviour:
   weaponPolygonCollider2D: {fileID: 7255277522545501964}
   weaponShootPositionTransform: {fileID: 4287431759321388259}
   weaponEffectPositionTransform: {fileID: 3595536197798133900}
+--- !u!114 &7724647921085784054
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232338602791665730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 844d65fd6e1bb6b49bdf60c2ee0ff14a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1094789795490392642
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232338602791665730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca4f1cd2403a5e94abaadf9c3eb5c264, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-1323745548017512079
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7232338602791665730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b1fe603aa79be2742afd66f13a99072f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
