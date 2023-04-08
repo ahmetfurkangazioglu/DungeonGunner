@@ -3,20 +3,24 @@ using UnityEngine;
 
 [RequireComponent(typeof(ActiveWeapon))]
 [RequireComponent(typeof(FireWeaponEvent))]
+[RequireComponent(typeof(ReloadWeaponEvent))]
 [RequireComponent(typeof(WeaponFiredEvent))]
 
 [DisallowMultipleComponent]
 public class FireWeapon : MonoBehaviour
 {
+    private float firePreChargeTimer = 0f;
     private float fireRateCoolDownTimer = 0f;
     private ActiveWeapon activeWeapon;
     private FireWeaponEvent fireWeaponEvent;
+    private ReloadWeaponEvent reloadWeaponEvent;
     private WeaponFiredEvent weaponFiredEvent;
 
     private void Awake()
     {
         activeWeapon = GetComponent<ActiveWeapon>();
         fireWeaponEvent = GetComponent<FireWeaponEvent>();
+        reloadWeaponEvent = GetComponent<ReloadWeaponEvent>();
         weaponFiredEvent = GetComponent<WeaponFiredEvent>();
     }
 
@@ -48,7 +52,7 @@ public class FireWeapon : MonoBehaviour
 
     private void WeaponFire(FireWeaponEventArgs fireWeaponEventArgs)
     {
-
+        WeaponPreCharge(fireWeaponEventArgs);
         // Weapon fire.
         if (fireWeaponEventArgs.fire)
         {
@@ -58,11 +62,26 @@ public class FireWeapon : MonoBehaviour
                 FireAmmo(fireWeaponEventArgs.aimAngle, fireWeaponEventArgs.weaponAimAngle, fireWeaponEventArgs.weaponAimDirectionVector);
 
                 ResetCoolDownTimer();
-           
+
+                ResetPrechargeTimer();
             }
         }
     }
 
+    private void WeaponPreCharge(FireWeaponEventArgs fireWeaponEventArgs)
+    {
+        // Weapon precharge.
+        if (fireWeaponEventArgs.firePreviousFrame)
+        {
+            // Decrease precharge timer if fire button held previous frame.
+            firePreChargeTimer -= Time.deltaTime;
+        }
+        else
+        {
+            // else reset the precharge timer.
+            ResetPrechargeTimer();
+        }
+    }
     private bool IsWeaponReadyToFire()
     {
         // if there is no ammo and weapon doesn't have infinite ammo then return false.
@@ -74,12 +93,14 @@ public class FireWeapon : MonoBehaviour
             return false;
 
         // If the weapon isn't precharged or is cooling down then return false.
-        if (fireRateCoolDownTimer > 0f)
+        if (firePreChargeTimer > 0f ||fireRateCoolDownTimer > 0f)
             return false;
 
         // if no ammo in the clip and the weapon doesn't have infinite clip capacity then return false.
         if (!activeWeapon.GetCurrentWeapon().weaponDetails.hasInfiniteClipCapacity && activeWeapon.GetCurrentWeapon().weaponClipRemainingAmmo <= 0)
         {
+            reloadWeaponEvent.CallReloadWeaponEvent(activeWeapon.GetCurrentWeapon(), 0);
+
             return false;
         }
 
@@ -119,6 +140,11 @@ public class FireWeapon : MonoBehaviour
     {
         // Reset cooldown timer
         fireRateCoolDownTimer = activeWeapon.GetCurrentWeapon().weaponDetails.weaponFireRate;
+    }
+    private void ResetPrechargeTimer()
+    {
+        // Reset precharge timer
+        firePreChargeTimer = activeWeapon.GetCurrentWeapon().weaponDetails.weaponPrechargeTime;
     }
 
 }
