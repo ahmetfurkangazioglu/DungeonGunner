@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 8961058246211626305}
   - component: {fileID: 5969807047232297427}
   m_Layer: 14
-  m_Name: PlayerAmmo6x6
+  m_Name: PlayerAmmoRocket
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -200,7 +200,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a97c105638bdf8b4a8650670310a4cd3, type: 2}
+  - {fileID: 2100000, guid: 42c61dd66eb4e8c4a916ce83d7fbd680, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -221,7 +221,7 @@ SpriteRenderer:
   m_SortingLayerID: -653709415
   m_SortingLayer: 4
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 4df9cc7131cd27f4288bca5e76c82034, type: 3}
+  m_Sprite: {fileID: 21300000, guid: bed41c1cbc0b07f4983e5839276f1dd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -249,7 +249,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.375, y: 0.375}
+    oldSize: {x: 1, y: 0.4375}
     newSize: {x: 0.375, y: 0.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -257,16 +257,11 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.06079527, y: 0.18658301}
-      - {x: -0.062893815, y: 0.18757622}
-      - {x: -0.12742817, y: 0.123311974}
-      - {x: -0.18732134, y: 0.06244824}
-      - {x: -0.18747428, y: -0.062633835}
-      - {x: -0.06267737, y: -0.18725692}
-      - {x: 0.06235608, y: -0.18754818}
-      - {x: 0.18802078, y: -0.06255488}
-      - {x: 0.18793295, y: 0.062360805}
-      - {x: 0.12494455, y: 0.1247434}
+    - - {x: 0.24841872, y: 0.21791328}
+      - {x: -0.5012992, y: 0.21920504}
+      - {x: -0.50050944, y: -0.21813658}
+      - {x: 0.24840342, y: -0.21916562}
+      - {x: 0.5007942, y: 0.00011303648}
 --- !u!50 &5969807047232297427
 Rigidbody2D:
   serializedVersion: 4

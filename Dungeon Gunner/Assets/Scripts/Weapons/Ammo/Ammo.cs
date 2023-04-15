@@ -60,7 +60,8 @@ public class Ammo : MonoBehaviour, IFireable
        DisableAmmo();
     }
 
-    public void InitialiseAmmo(AmmoDetailsSO ammoDetails, float aimAngle, float weaponAimAngle, float ammoSpeed, Vector3 weaponAimDirectionVector, bool overrideAmmoMovement = false)
+    public void InitialiseAmmo(AmmoDetailsSO ammoDetails, float aimAngle, float weaponAimAngle, float ammoSpeed, Vector3 weaponAimDirectionVector,
+        bool overrideAmmoMovement = false)
     {
         #region Ammo
 

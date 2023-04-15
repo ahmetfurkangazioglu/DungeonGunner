@@ -145,7 +145,7 @@ GameObject:
   - component: {fileID: 8961058246211626305}
   - component: {fileID: 5969807047232297427}
   m_Layer: 14
-  m_Name: PlayerAmmo6x6
+  m_Name: PlayerAmmo4x4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -221,7 +221,7 @@ SpriteRenderer:
   m_SortingLayerID: -653709415
   m_SortingLayer: 4
   m_SortingOrder: 10
-  m_Sprite: {fileID: 21300000, guid: 4df9cc7131cd27f4288bca5e76c82034, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c3be09077243891458bdbf46a57d2e8a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -249,7 +249,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.375, y: 0.375}
+    oldSize: {x: 0.25, y: 0.25}
     newSize: {x: 0.375, y: 0.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -257,16 +257,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.06079527, y: 0.18658301}
-      - {x: -0.062893815, y: 0.18757622}
-      - {x: -0.12742817, y: 0.123311974}
-      - {x: -0.18732134, y: 0.06244824}
-      - {x: -0.18747428, y: -0.062633835}
-      - {x: -0.06267737, y: -0.18725692}
-      - {x: 0.06235608, y: -0.18754818}
-      - {x: 0.18802078, y: -0.06255488}
-      - {x: 0.18793295, y: 0.062360805}
-      - {x: 0.12494455, y: 0.1247434}
+    - - {x: -0.062893815, y: 0.12543154}
+      - {x: -0.12526119, y: 0.062136758}
+      - {x: -0.1250105, y: -0.061951466}
+      - {x: -0.06282374, y: -0.124926135}
+      - {x: 0.06228151, y: -0.12508857}
+      - {x: 0.12457682, y: -0.06283304}
+      - {x: 0.12511717, y: 0.062133435}
+      - {x: 0.06156881, y: 0.1247955}
 --- !u!50 &5969807047232297427
 Rigidbody2D:
   serializedVersion: 4
