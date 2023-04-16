@@ -155,7 +155,9 @@ public class WeaponStatusUI : MonoBehaviour
         // If set weapon is still reloading then update reload bar
         if (weapon.isWeaponReloading)
         {
-            UpdateWeaponReloadBar(weapon);
+            weapon.isWeaponReloading = false;
+            ResetWeaponReloadBar();
+            //UpdateWeaponReloadBar(weapon);
         }
         else
         {
@@ -205,6 +207,7 @@ public class WeaponStatusUI : MonoBehaviour
         for (int i = 0; i < weapon.weaponClipRemainingAmmo; i++)
         {
             // Instantiate ammo icon prefab
+            // Pool manager will be added
             GameObject ammoIcon = Instantiate(GameResources.Instance.ammoIconPrefab, ammoHolderTransform);
 
             ammoIcon.GetComponent<RectTransform>().anchoredPosition = new Vector2(0f, Settings.uiAmmoIconSpacing * i);
