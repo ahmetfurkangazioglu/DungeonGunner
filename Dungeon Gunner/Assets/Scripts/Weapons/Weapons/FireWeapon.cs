@@ -186,7 +186,7 @@ public class FireWeapon : MonoBehaviour
     {
         if (activeWeapon.GetCurrentWeapon().weaponDetails.weaponFiringSoundEffect !=null)
         {
-            SoundEffectManager.Instance.PlaySoundEffect(activeWeapon.GetCurrentWeapon().weaponDetails.weaponFiringSoundEffect);
+            SoundEffectManager.Instance.PlaySoundEffect(activeWeapon.GetCurrentWeapon().weaponDetails.weaponFiringSoundEffect,true);
         }
     }
 }

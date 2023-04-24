@@ -58,7 +58,7 @@ public class ReloadWeapon : MonoBehaviour
 
         if (weapon.weaponDetails.weaponReloadingSoundEffect!=null)
         {
-            SoundEffectManager.Instance.PlaySoundEffect(weapon.weaponDetails.weaponReloadingSoundEffect);
+            SoundEffectManager.Instance.PlaySoundEffect(weapon.weaponDetails.weaponReloadingSoundEffect,false);
         }
 
          // Set weapon as reloading
@@ -123,6 +123,7 @@ public class ReloadWeapon : MonoBehaviour
             {
                 StopCoroutine(reloadWeaponCoroutine);
                 setActiveWeaponEventArgs.weapon.weaponReloadTimer = 0f;
+                SoundEffectManager.Instance.ForceDisableSound();
             }
 
         

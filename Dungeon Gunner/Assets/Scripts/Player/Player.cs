@@ -49,7 +49,6 @@ public class Player : MonoBehaviour
     [HideInInspector] public SpriteRenderer spriteRenderer;
     [HideInInspector] public Animator animator;
 
-
     public List<Weapon> weaponList = new List<Weapon>();
     private void Awake()
     {
