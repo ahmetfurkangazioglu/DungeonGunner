@@ -57,6 +57,7 @@ public class Ammo : MonoBehaviour, IFireable
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+       AmmoHitEffect();
        DisableAmmo();
     }
 
@@ -155,6 +156,18 @@ public class Ammo : MonoBehaviour, IFireable
         gameObject.SetActive(false);
     }
 
+    private void AmmoHitEffect()
+    {
+        if (ammoDetails.ammoHitEffect != null && ammoDetails.ammoHitEffect.ammoHitEffectPrefab!=null)
+        {
+            AmmoHitEffect ammoHitEffect = (AmmoHitEffect)PoolManager.Instance.ReuseComponent
+                (ammoDetails.ammoHitEffect.ammoHitEffectPrefab, transform.position, Quaternion.identity);
+
+            ammoHitEffect.SetHitEffect(ammoDetails.ammoHitEffect);
+
+            ammoHitEffect.gameObject.SetActive(true);
+        }
+    }
     public void SetAmmoMaterial(Material material)
     {
         spriteRenderer.material = material;

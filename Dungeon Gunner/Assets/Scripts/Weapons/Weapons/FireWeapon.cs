@@ -168,6 +168,8 @@ public class FireWeapon : MonoBehaviour
         // Call weapon fired event
         weaponFiredEvent.CallWeaponFiredEvent(activeWeapon.GetCurrentWeapon());
 
+        WeaponShootEffect(aimAngle);
+
         WeaponSoundEffect();
     }
 
@@ -180,6 +182,21 @@ public class FireWeapon : MonoBehaviour
     {
         // Reset precharge timer
         firePreChargeTimer = activeWeapon.GetCurrentWeapon().weaponDetails.weaponPrechargeTime;
+    }
+
+    private void WeaponShootEffect(float aimAngle)
+    {
+        if (activeWeapon.GetCurrentWeapon().weaponDetails.weaponShootEffect !=null
+            && activeWeapon.GetCurrentWeapon().weaponDetails.weaponShootEffect.weaponShootEffectPrefab != null)
+        {
+            WeaponShootEffect weaponShootEffect = (WeaponShootEffect)PoolManager.Instance.ReuseComponent
+                (activeWeapon.GetCurrentWeapon().weaponDetails.weaponShootEffect.weaponShootEffectPrefab,
+                activeWeapon.GetShootEffectPosition(), Quaternion.identity);
+
+            weaponShootEffect.SetShootEffect(activeWeapon.GetCurrentWeapon().weaponDetails.weaponShootEffect, aimAngle);
+
+            weaponShootEffect.gameObject.SetActive(true);
+        }
     }
 
     private void WeaponSoundEffect()

@@ -41,6 +41,15 @@ public class AmmoDetailsSO : ScriptableObject
     #endregion
     public Material ammoChargeMaterial;
 
+    #region Header AMMO HIT EFFECT
+    [Space(10)]
+    [Header(" AMMO HIT EFFECT")]
+    #endregion
+    #region Tooltip
+    [Tooltip(" AMMO HIT EFFECT")]
+    #endregion
+    public AmmoHitEffectSO ammoHitEffect;
+
     #region Header AMMO BASE PARAMETERS
     [Space(10)]
     [Header("AMMO BASE PARAMETERS")]
