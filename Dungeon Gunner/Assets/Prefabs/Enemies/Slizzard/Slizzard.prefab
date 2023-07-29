@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5179048152728020212, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: movementDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: f56a7f74002cad54cada01dc734528cc, type: 2}
     - target: {fileID: 323597565407691106, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Size.x
       value: 0.25
@@ -115,6 +119,10 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: -4962105368696266709, guid: a8656369a18034244b64a0e94d781de5, type: 3}
+    - target: {fileID: 4524740365774157208, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: enemyDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: 6471e5eedf3e4a64783ba995be1b93c8, type: 2}
     - target: {fileID: 4828605831204769054, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Name
       value: Slizzard

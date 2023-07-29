@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5179048152728020212, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: movementDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: 7bcab0f878d437b48af91a553534cdcb, type: 2}
     - target: {fileID: 2303330337280063255, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Size.x
       value: 0.25
@@ -91,6 +95,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.5058824
       objectReference: {fileID: 0}
+    - target: {fileID: 4524740365774157208, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: enemyDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: baa496415b92c45468bb7783a7298502, type: 2}
     - target: {fileID: 4828605831204769054, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Name
       value: SlimeBlock_Green

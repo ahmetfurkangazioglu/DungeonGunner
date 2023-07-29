@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5179048152728020212, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: movementDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: 835d5bc92adaabd488f85c627e687df0, type: 2}
     - target: {fileID: 2303330337280063255, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Size.x
       value: 0.25
@@ -95,6 +99,10 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.94509804
       objectReference: {fileID: 0}
+    - target: {fileID: 4524740365774157208, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: enemyDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: 311ef68d328f2164a97ce9d2ef3f8e22, type: 2}
     - target: {fileID: 4828605831204769054, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Name
       value: Orc_Flesh

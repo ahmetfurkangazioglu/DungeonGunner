@@ -7,6 +7,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -5179048152728020212, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: movementDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: fc004cfb927738145b387ae655b3b965, type: 2}
     - target: {fileID: 2303330337280063255, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Size.x
       value: 0.25
@@ -83,6 +87,10 @@ PrefabInstance:
       propertyPath: m_WasSpriteAssigned
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4524740365774157208, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
+      propertyPath: enemyDetails
+      value: 
+      objectReference: {fileID: 11400000, guid: e985aa2e872489a4f9fa16ae2e9066ae, type: 2}
     - target: {fileID: 4828605831204769054, guid: a9f97491554a0dd4cb399e838cba7a11, type: 3}
       propertyPath: m_Name
       value: SlimeBlockKing_Red

@@ -10,7 +10,7 @@ public static class AStar
     public static Stack<Vector3> BuildPath(Room room, Vector3Int startGridPosition, Vector3Int endGridPosition)
     {
         // Adjust positions by lower bounds
-        startGridPosition -= (Vector3Int)room.templateLowerBounds; ;
+        startGridPosition -= (Vector3Int)room.templateLowerBounds;
         endGridPosition -= (Vector3Int)room.templateLowerBounds;
 
         // Create open list and closed hashset

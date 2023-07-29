@@ -93,6 +93,11 @@ public class Player : MonoBehaviour
         health.SetStartingHealth(playerDetails.playerHealthAmount);
     }
 
+    public Vector3 GetPlayerPosition()
+    {
+        return transform.position;
+    }
+
     public Weapon AddWeaponToPlayer(WeaponDetailsSO weaponDetails)
     {
         Weapon weapon = new Weapon() { weaponDetails = weaponDetails, weaponReloadTimer = 0f, weaponClipRemainingAmmo = weaponDetails.weaponClipAmmoCapacity, weaponRemainingAmmo = weaponDetails.weaponAmmoCapacity, isWeaponReloading = false };
